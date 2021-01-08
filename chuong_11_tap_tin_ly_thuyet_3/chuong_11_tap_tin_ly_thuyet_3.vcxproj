@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{b0c4ccbd-44c1-44de-9e6d-04997627aab1}</ProjectGuid>
-    <RootNamespace>giaibaitapmang1chieu1</RootNamespace>
+    <ProjectGuid>{c49483b0-c8c0-4d30-a6b0-ebb7a59af484}</ProjectGuid>
+    <RootNamespace>chuong11taptinlythuyet3</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

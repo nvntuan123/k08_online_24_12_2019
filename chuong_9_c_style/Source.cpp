@@ -179,8 +179,8 @@ int _STRICMP(const char* _Str1, const char* _Str2) // Không phân biệt hoa th
 	// Tạo bản sao.
 	char* _StrCopy1 = _strdup(_Str1);
 	char* _StrCopy2 = _strdup(_Str2);
-	_strlwr(_StrCopy1);
-	_strlwr(_StrCopy2);
+	_STRLWR(_StrCopy1);
+	_STRLWR(_StrCopy2);
 
 	int _ILengthStr1 = strlen(_StrCopy1);
 	int _ILengthStr2 = strlen(_StrCopy2);
