@@ -6,7 +6,7 @@
 void readNumber(int INumber)
 {
 	int IValueSide = 0;
-	int IExponents = log10(double(INumber)); // So mu.
+	int IExponents = log10(INumber); // So mu.
 	int IQuantityNumber = IExponents + 1; // So luong chu so.
 
 	if (IQuantityNumber > 9)
