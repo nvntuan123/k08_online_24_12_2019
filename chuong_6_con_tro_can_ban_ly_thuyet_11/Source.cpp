@@ -1,6 +1,7 @@
 // Con tro va kieu tra ve cua ham.
 
 #include <iostream>
+#include <Windows.h>
 
 using namespace std;
 
@@ -26,7 +27,7 @@ int main()
 
 	int* iPtr = ReturnAddress(10);
 	cout << *iPtr << endl; // Loi rat la nghiem trong.
-	_sleep(5000);
+	Sleep(5000);
 	cout << *iPtr << endl; // Loi rat la nghiem trong.
 
 	cout << endl;
