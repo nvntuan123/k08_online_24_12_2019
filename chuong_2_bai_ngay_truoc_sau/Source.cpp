@@ -85,7 +85,10 @@ int main()
 	5.3.2.1.2: Nguoc lai khong la thang 1?
 	- LastYear = NextYear = Year. *
 	- LastMonth = Month - 1.
-	- YesterDay = 30.
+	 5.3.2.1.2.1: Neu la thang 8
+	 - YesterDay = 31.
+	 5.3.2.1.2.1: Neu khong la thang 8
+	 - YesterDay = 30.
 	5.3.2.2: Neu la ngay giua thang.
 	- LastYear = NextYear = Year. *
 	- LastMonth = NextMonth = Month.
@@ -209,9 +212,19 @@ int main()
 	*/
 
 tuandeptrai:
-	int iToDay, iMonth, iYear;
-	int iYesterDay, iLastMonth, iLastYear; // Truoc do.
-	int iTomorrow, iNextMonth, iNextYear; // Ke tiep.
+	int iToDay;
+	int iMonth;
+	int iYear;
+
+	// Truoc do.
+	int iYesterDay;
+	int iLastMonth;
+	int iLastYear;
+
+	// Ke tiep.
+	int iTomorrow;
+	int iNextMonth;
+	int iNextYear;
 
 	cout << "Nhap vao ngay hien tai: ";
 	cin >> iToDay;
@@ -241,7 +254,7 @@ tuandeptrai:
 				{
 					iLastMonth = iNextMonth = iMonth; // Thang khong thay doi.
 
-													  // Ngay, thang truoc do.
+					// Ngay, thang truoc do.
 					iYesterDay = iToDay - 1;
 
 					// Ngay, thang ke tiep.
@@ -260,12 +273,25 @@ tuandeptrai:
 						else if (iMonth == 3)
 						{
 							if (bCheckLeapYear) // La nam nhuan => YesterDay = 29.
+							{
 								iYesterDay = 29;
+							}
 							else // La nam nhuan => YesterDay = 28.
+							{
 								iYesterDay = 28;
+							}
 						}
 						else
-							iYesterDay = 30;
+						{
+							if (iMonth == 8)
+							{
+								iYesterDay = 31;
+							}
+							else
+							{
+								iYesterDay = 30;
+							}
+						}
 					}
 
 					if (iToDay == 31) // Cuoi thang.
@@ -325,12 +351,16 @@ tuandeptrai:
 				if (bCheckLeapYear) // La nam nhuan.
 				{
 					if (iToDay > 29) // Ngay nhap vao > 29 => sai.
+					{
 						bCheck = false;
+					}
 				}
 				else // Khong phai la nam nhuan.
 				{
 					if (iToDay > 28) // Ngay nhap vao > 28 => sai.
+					{
 						bCheck = false;
+					}
 				}
 
 				if (bCheck) // Ngay nhap vao hop le => xu ly.
