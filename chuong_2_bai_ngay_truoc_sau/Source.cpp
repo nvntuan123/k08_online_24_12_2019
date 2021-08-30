@@ -209,6 +209,12 @@ int main()
 	Nhap vao nam hien tai: 2020
 	Ngay thang nam truoc do: 31/12/2019
 	Ngay thang nam ke tiep: 2/1/2020
+	*******************************
+	Nhap vao ngay hien tai: 1
+	Nhap vao thang hien tai: 8
+	Nhap vao nam hien tai: 2021
+	Ngay thang nam truoc do: 31/7/2021
+	Ngay thang nam ke tiep: 2/8/2021
 	*/
 
 tuandeptrai:
